@@ -13,12 +13,12 @@ const Header = () => {
   const path = usePathname();
 
   return (
-    <Navbar className="p-5">
+    <Navbar className="p-5 bg-transparent">
       <Link
         href="/"
         className="self-center whitespace-nowrap text-sm sm:text-xl font-semibold dark:text-white"
       >
-        <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
+        <span className="px-2 py-1 bg-gradient-to-b from-[#7def817d] via-[#54dd487d] to-[#c0fac87d] rounded-2xl text-white border border-[#66e6777d] mr-1">
           Fruti
         </span>
         Blog
@@ -43,9 +43,9 @@ const Header = () => {
         </SignedIn>
         <SignedOut>
           <Link href="/sign-in">
-            <Button gradientDuoTone="purpleToBlue" outline>
+            <button className="buttonA before hover:cursor-pointer" id="before" type="button">
               Sign In
-            </Button>
+            </button>
           </Link>
         </SignedOut>
         <Navbar.Toggle />

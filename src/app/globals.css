@@ -83,6 +83,13 @@
     --sh-keyword: #f47067;
     --sh-string: #0fa295;
   }
+
+  .bg-1 {
+    background-image: url("../../public/images/wallpaper-2.jpg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
 }
 
 @layer base {
@@ -333,3 +340,164 @@ table {
     @apply bg-background text-foreground;
   }
 }
+
+.boxShadow1 {
+  box-shadow:
+    inset 0 -2px 4px 1px rgba(41, 218, 129, 0.6),
+    inset 0 -4px 4px 1px #33b09d,
+    inset 0 0 2px 1px rgba(255, 255, 255, .2),
+    0 1px 4px 1px rgba(17, 231, 88, 0.2),
+    0 1px 4px 1px rgba(0, 0, 0, .1);
+}
+
+.boxShadow1::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px 100px 50px 50px;
+  width: 92%;
+  height: 15%;
+  background-image: linear-gradient(to bottom, #c1e4c2, transparent);
+  opacity: .75;
+}
+
+.buttonB {
+  position: relative;
+  border: 1px solid #32c045;
+  border-radius: 50px;
+  padding: 12px 16px;
+  background-color: #2fb33e;
+  background-image:
+    radial-gradient(75% 50% at 50% 0%, #c1e4c3, transparent),
+    radial-gradient(75% 35% at 50% 80%, #8dfcc6, transparent);
+  box-shadow:
+    inset 0 -2px 4px 1px rgba(17, 231, 124, 0.6),
+    inset 0 -4px 4px 1px rgb(151, 243, 193),
+    inset 0 0 2px 1px rgba(255, 255, 255, .2),
+    0 1px 4px 1px rgba(17, 231, 88, 0.2),
+    0 1px 4px 1px rgba(0, 0, 0, .1);
+  color: #fff;
+  text-shadow: 0 1px 1px #116297736ee7;
+  transition-property: border-color, transform, background-color;
+  transition-duration: .2s;
+}
+  
+.buttonB::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 200px 200px 50px 50px;
+  width: 90%;
+  height: 30%;
+  background-image: linear-gradient(to bottom, #c1e4c3, transparent);
+  opacity: .75;
+}
+
+.buttonA.before {
+  position: relative;
+  border: 1px solid #03dfb7;
+  border-radius: 50px;
+  padding: 8px 16px;
+  min-width: 8em;
+  background-color: #0aac9f;
+  background-image: radial-gradient(75% 50% at 50% 0%, #f4fff8, transparent), radial-gradient(75% 35% at 50% 85%, #8dfcdd, transparent);
+  box-shadow: inset 0 -2px 4px 1px rgba(17, 231, 192, 0.6), inset 0 -4px 4px 1px #8dfcd3, inset 0 0 2px 1px rgba(255, 255, 255, 0.2), 0 1px 4px 1px rgba(17, 231, 113, 0.2), 0 1px 4px 1px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px #11e799;
+  transition-property: border-color, transform, background-color;
+  transition-duration: 0.2s;
+}
+.buttonA:hover {
+  border: 1px solid #3ca181;
+}
+.buttonA.before::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px 100px 50px 50px;
+  width: 90%;
+  height: 40%;
+  background-image: linear-gradient(to bottom, #f4fff956, transparent);
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.buttonA.before:hover::after {
+  background-image: linear-gradient(to bottom, #f4fff9ab, transparent);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.buttonA.before:hover::before {
+  box-shadow: inset 0 -2px 4px 1px rgba(17, 231, 135, 0.321), inset 0 -4px 4px 1px #8dfccc58, inset 0 0 2px 1px rgba(255, 255, 255, 0.2), 0 1px 4px 1px rgba(17, 231, 170, 0.2), 0 1px 4px 1px rgba(0, 0, 0, 0.1);
+  background-image: radial-gradient(75% 50% at 50% 0%, #f4fff865, transparent), radial-gradient(75% 35% at 50% 85%, #8dfce67d, transparent);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttonA.before:active {
+  border-color: #00d56a;
+  transform: scale(0.96);
+  background-color: #00d520;
+}
+ 
+
+/*
+#0e6996
+#39abe4
+#6aceff
+#85d9fe
+#b9d6e4
+#daf1f7
+
+#2b8a8c
+#1aa6a7
+#01c9c9
+#baeceb
+
+#d78f1c
+#ffac28
+#ffbb50
+#ffe190
+#fff2cf
+
+#f2df51
+#fff146
+#fff796
+#fcfac0
+
+#9bbb25
+#d7e224
+#e0ed66
+#ecf383
+#eefab6
+#eff4cf
+
+#198e26
+#299d37
+#4cb618
+#50c917
+#31e447
+#8cf342
+#adff7e
+
+#faf6ec
+#fcfbf9
+#f3eee3
+#eceae4
+#edeee9
+#c3c3c3
+#9b9b9b
+#858585
+
+#2f3326
+#2c302f
+#202020
+#303336
+#0e0e0d
+#151617
+*/

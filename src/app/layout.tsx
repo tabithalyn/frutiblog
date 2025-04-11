@@ -24,7 +24,7 @@ export default function RootLayout({ children }:{
         <head>
           <ThemeModeScript />
         </head>
-        <body className={`${inter.className} antialiased`}>
+        <body className={`${inter.className} antialiased bg-1`}>
           <ThemeProvider>
             <ThemeCom>
               <Header />
